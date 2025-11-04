@@ -1,122 +1,123 @@
-# SYSTEM INSTRUCTION:
-You are **GPT-5**, a high-intelligence creative design model specialized in **premium website generation** for coaches and consultants. 
-Generate a complete, high-value website layout and copy for the following concept.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>Automotive Design Coach</title>
+<style>
+html,body{margin:0;padding:0;font-family:'Inter',sans-serif;color:#f5f5f5;background:#0a0a0a;scroll-behavior:smooth;}
+section{padding:100px 10%;position:relative;}
+h1,h2,h3{margin:0;font-weight:600;letter-spacing:.5px;}
+a,button{cursor:pointer;text-decoration:none;color:inherit;border:none;background:none;}
+/* Hero */
+#hero{height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(to bottom right,#0a0a0a,#1a1a1a);}
+.hero-content{z-index:2;}
+#hero video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:.3;z-index:1;}
+.cta{margin-top:30px;display:flex;gap:20px;justify-content:center;}
+.cta button{padding:14px 36px;border-radius:40px;font-size:16px;font-weight:500;background:#0078ff;color:#fff;transition:.3s;}
+.cta button:hover{background:#33a1ff;}
+/* About */
+#about{background:#111;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.about-grid img{width:100%;border-radius:20px;filter:grayscale(20%);}
+#programs{background:#0e0e0e;}
+.programs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;}
+.card{background:#151515;border-radius:20px;padding:30px;transition:.4s;}
+.card:hover{transform:translateY(-10px);background:#1f1f1f;}
+.card h3{color:#00aaff;}
+/* Portfolio */
+#portfolio{background:#101010;}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.gallery img{width:100%;border-radius:12px;transition:.4s;filter:brightness(.8);}
+.gallery img:hover{transform:scale(1.05);filter:brightness(1);}
+#cta{background:linear-gradient(90deg,#0078ff,#00aaff);}
+#cta h2{color:#fff;text-align:center;margin-bottom:30px;}
+#cta button{display:block;margin:auto;padding:16px 48px;font-size:18px;border-radius:40px;background:#fff;color:#0078ff;font-weight:600;transition:.3s;}
+#cta button:hover{background:#e6e6e6;}
+/* Contact */
+#contact{background:#111;text-align:center;}
+form{display:flex;flex-direction:column;gap:20px;max-width:400px;margin:auto;}
+input,textarea{padding:14px;border-radius:8px;border:none;background:#1c1c1c;color:#f5f5f5;}
+input:focus,textarea:focus{outline:1px solid #0078ff;}
+footer{padding:40px 0;text-align:center;background:#0a0a0a;font-size:14px;color:#888;}
+/* Scroll animations */
+.fade-in{opacity:0;transform:translateY(40px);transition:opacity 1s ease,transform 1s ease;}
+.fade-in.visible{opacity:1;transform:translateY(0);}
+</style>
+</head>
+<body>
 
----
+<section id="hero">
+  <video autoplay muted loop>
+    <source src="https://cdn.coverr.co/videos/coverr-car-light-streaks-0175/1080p.mp4" type="video/mp4">
+  </video>
+  <div class="hero-content">
+    <h1 style="font-size:60px;">Master Automotive Digital Design</h1>
+    <p style="font-size:20px;color:#ccc;">Learn 3D Sculpting, Digital Surfacing &amp; Autodesk Alias from Industry Experts.</p>
+    <div class="cta">
+      <button onclick="scrollToSection('programs')">Start Learning</button>
+      <button onclick="scrollToSection('contact')">Book a Call</button>
+    </div>
+  </div>
+</section>
 
-## PROJECT: Premium $10K Website for Automotive Design Coach
+<section id="about" class="fade-in">
+  <div class="about-grid">
+    <img src="https://images.unsplash.com/photo-1543269664-76bc3997d9ea?auto=format&fit=crop&w=900&q=80" alt="Coach portrait">
+    <div>
+      <h2>About the Coach</h2>
+      <p>With over 20 years in automotive design, our coach has shaped surfaces for leading OEMs and startups alike. 
+      His mentorship has empowered more than 500 designers to elevate their craft in Alias and digital sculpting.</p>
+      <button style="margin-top:20px;padding:12px 28px;border-radius:30px;background:#0078ff;color:#fff;" onclick="scrollToSection('portfolio')">Read Full Story</button>
+    </div>
+  </div>
+</section>
 
-You are creating a **premium, modern, and luxurious website** for an elite **Automotive Design Coach** who specializes in:
-- Digital Sculpting  
-- 3D Modeling  
-- Autodesk Alias Training  
-- Design Consulting  
+<section id="programs" class="fade-in">
+  <h2 style="text-align:center;margin-bottom:60px;">Programs & Coaching</h2>
+  <div class="programs-grid">
+    <div class="card"><h3>1:1 Mentorship</h3><p>Personalized coaching tailored to your goals in Alias & surfacing.</p></div>
+    <div class="card"><h3>Masterclasses</h3><p>Intensive workshops exploring next-gen design workflows and form development.</p></div>
+    <div class="card"><h3>Group Workshops</h3><p>Collaborative sessions for studios and design teams to align digital & physical modeling.</p></div>
+  </div>
+</section>
 
-The website must visually and emotionally communicate **authority, mastery, and trust**, targeting professionals, design students, and automotive enthusiasts who seek mentorship or consulting.
+<section id="portfolio" class="fade-in">
+  <h2 style="text-align:center;margin-bottom:40px;">Design Showcase</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=900&q=80" alt="car concept">
+    <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=900&q=80" alt="alias model">
+    <img src="https://images.unsplash.com/photo-1511390169933-0a3fda3b61c5?auto=format&fit=crop&w=900&q=80" alt="studio render">
+    <img src="https://images.unsplash.com/photo-1523983303434-eca1fc9e77f3?auto=format&fit=crop&w=900&q=80" alt="vehicle interior">
+  </div>
+</section>
 
----
+<section id="cta" class="fade-in">
+  <h2>Transform Your Design Career Today</h2>
+  <button onclick="scrollToSection('contact')">Book Your Free Consultation</button>
+</section>
 
-### 🎯 OBJECTIVE
-Position the coach as a **world-class authority** in automotive digital design by showcasing:
-- Experience and expertise  
-- Signature programs & coaching offers  
-- Portfolio of past work  
-- Testimonials & transformations  
-- Simple contact & booking flow  
+<section id="contact" class="fade-in">
+  <h2>Contact</h2>
+  <form onsubmit="event.preventDefault();alert('Message sent!');">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button style="padding:14px;border-radius:30px;background:#0078ff;color:#fff;font-weight:600;">Send Message</button>
+  </form>
+</section>
 
----
+<footer>© 2025 Automotive Design Coach. All rights reserved.</footer>
 
-### 💎 DESIGN LANGUAGE
-- **Mood:** Premium × Futuristic × Minimal  
-- **Visual Inspiration:** *Apple Design Studio* × *BMW i Division*  
-- **Color Palette:** Jet Black, Graphite Gray, Titanium Silver, Accent Blue  
-- **Typography:** Neue Haas Grotesk / Montserrat / Inter  
-- **Layout:** Full-width hero, bold headings, fluid motion transitions  
-- **Feel:** Cinematic, clean, confident  
+<script>
+function scrollToSection(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});}
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{
+  if(e.isIntersecting){e.target.classList.add('visible');}
+ });
+},{threshold:.2});
+document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+</script>
 
----
-
-### 🧱 PAGE STRUCTURE
-
-#### 1. Hero Section
-- **Visual:** Cinematic video loop or 3D automotive render background  
-- **Headline:** “Master Automotive Digital Design”  
-- **Subheadline:** “Learn 3D Sculpting, Digital Surfacing & Autodesk Alias from Industry Experts.”  
-- **Buttons:** “Start Learning” | “Book a Call”  
-- **Micro Interaction:** Subtle camera pan or gradient light sweep animation  
-
-#### 2. About the Coach
-- **Photo:** Professional studio portrait with depth lighting  
-- **Text Highlights:**
-  - 20+ years in automotive design  
-  - Worked with global OEMs and startups  
-  - Mentor to 500+ professionals worldwide  
-- **Tone:** Story-driven, humble confidence  
-- **CTA:** “Read Full Story”  
-
-#### 3. Programs & Coaching
-- **Sections:**  
-  - 1:1 Mentorship  
-  - Masterclasses  
-  - Group Workshops  
-- **Each Card Includes:**  
-  - Visual thumbnail  
-  - Duration, pricing tier  
-  - CTA: “Enroll Now”  
-- **Accent:** Testimonial snippets beneath cards  
-
-#### 4. Portfolio / Design Showcase
-- **Layout:** Scrollable gallery grid with hover zoom effect  
-- **Categories:** Automotive | Concept | Alias Training | Visualization  
-- **Media:** Renders, wireframes, Alias screenshots, process GIFs  
-
-#### 5. Consulting Services
-- **Process Diagram:** Concept → Alias → Class-A Surfacing → Visualization  
-- **Industries:** Automotive, Product Design, Transportation Startups  
-- **Copy Tone:** Clear, structured, expert guidance  
-
-#### 6. Testimonials & Results
-- **Format:** Carousel or stacked cards  
-- **Highlight:** “Over 500 Designers Trained Worldwide”  
-- **Includes:** Star ratings, before-after visuals, brand logos  
-
-#### 7. Call-to-Action
-- **Headline:** “Transform Your Design Career Today.”  
-- **CTA Button:** “Book Your Free Consultation”  
-- **Visual Accent:** Subtle gradient motion or spark particle animation  
-
-#### 8. Blog / Insights
-- **Topics:** Design tools, workflows, case studies, and industry trends  
-- **Layout:** Masonry or card grid  
-- **Goal:** SEO-optimized educational content  
-
-#### 9. Contact / Booking
-- **Form:** Simple 3-field form (Name, Email, Message)  
-- **Integrations:** Calendly / TidyCal + WhatsApp chat + Email link  
-- **Footer:** Minimal with social links, copyright, and contact info  
-
----
-
-### ⚙️ TECHNICAL SPECS
-- Framework: **Next.js + Framer Motion + TailwindCSS**  
-- Responsive across all breakpoints  
-- SEO optimized, high-speed, CMS-ready (Sanity / Notion)  
-- Integrations: Calendly API, Lottie animations, optional Three.js hero  
-- Accessibility & performance > 95%  
-
----
-
-### 🧠 BRAND PERSONALITY
-- Sophisticated yet approachable  
-- Precision-driven mentor with high credibility  
-- Emotion: Calm confidence and creative mastery  
-- Perceived value: **$10K+ design aesthetic**  
-
----
-
-### ✨ FINAL OUTPUT EXPECTATION
-Generate:
-1. Section-by-section **UI layout descriptions**
-2. Fully written **website copy** (headlines, paragraphs, CTAs)
-3. Suggested **visual/media assets** (videos, renders, icons)
-4. **Tone & consistency** aligned with luxury, professional coaching brands
+</body>
+</html>
